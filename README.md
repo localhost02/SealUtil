@@ -4,9 +4,8 @@
 # 2、生成的效果图一览
 ## 2.1 公章效果图
 
-------------
-
 **圆形公章：**
+------------
 
 ![](https://raw.githubusercontent.com/localhost02/SealUtil/master/img/公章0.png)
 
@@ -16,9 +15,8 @@
 
 ![](https://raw.githubusercontent.com/localhost02/SealUtil/master/img/公章3.png)
 
-------------
-
 **椭圆公章：**
+------------
 
 ![](https://raw.githubusercontent.com/localhost02/SealUtil/master/img/公章4.png)
 
@@ -27,7 +25,6 @@
 ![](https://raw.githubusercontent.com/localhost02/SealUtil/master/img/公章6.png)
 
 ## 2.2 私章效果图
-
 ------------
 
 ![](https://raw.githubusercontent.com/localhost02/SealUtil/master/img/私章0.png)
