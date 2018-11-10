@@ -1,47 +1,3 @@
-# 1、迎合你的需求
-当你需要一些`特定内容定制`的公章或私章图片，刚好你又懂点Java基础知识，那么你可以使用这个工具。
-
-# 2、生成的效果图一览
-## 2.1 公章效果图
-
-------------
-
-
-**圆形公章：**
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/c27195ed6f54f757300270e800e51f76.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/469aa4b13d7af3bbed4387d769a87b8f.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/7c997e4ebbcb55f93aa83bd79085879c.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/274b7f578c31c616480586a50cb65f3f.png)
-
-**椭圆公章：**
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/94b034a772aacf887bfb20f276185760.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/72b350a0844e43b2e6e213bbdbdf793f.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/932175483d6a7fd0dc45a6cf838bb59e.png)
-
-## 2.2 私章效果图
-
-------------
-
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/4ff5688d9095fac9e0246c761c5e023b.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/6b7bd6b5dd572073a04f84df3dec47f6.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/2bb40f0497be2bc5d665c970691bc305.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/67d501a8c2c1756271b019eb8441a10f.png)
-
-![](http://p27z4ahy7.bkt.clouddn.com/2018/11/11/ab9afcc736b7d22dac635e5ce2f59d3b.png)
-
-# 3.使用方法
-```java
 import cn.localhost01.seal.SealUtil;
 import cn.localhost01.seal.configuration.SealCircle;
 import cn.localhost01.seal.configuration.SealConfiguration;
@@ -184,13 +140,3 @@ public class Main {
     }
 
 }
-```
-
-通过`SealUtil\src\Main.java`文件来进行配置各种参数，不断调整，达到你需要的效果！
-
-# 4、开发背景
-本身这个小工具是我接的一个外包活儿，但是最后价格没谈拢，我就没卖了。
-
-最后吐槽一下那个需求方，接下活儿时，报价是1K，做好人家却反悔只出300。
-
-好吧，高雅的程序员**就算是免费开源，也不会低价贱卖！** o(∩_∩)o 哈哈
