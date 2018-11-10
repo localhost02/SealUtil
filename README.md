@@ -9,36 +9,36 @@
 
 **圆形公章：**
 
-![][img_0]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章0.png")
 
-![][img_1]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章1.png")
 
-![][img_2]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章2.png")
 
-![][img_3]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章3.png")
 
 **椭圆公章：**
 
-![][img_4]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章4.png")
 
-![][img_5]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章5.png")
 
-![][img_6]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/公章6.png")
 
 ## 2.2 私章效果图
 
 ------------
 
 
-![][img_7]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/私章0.png")
 
-![][img_8]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/私章1.png")
 
-![][img_9]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/私章2.png")
 
-![][img_10]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/私章3.png")
 
-![][img_11]
+![]("https://github.com/localhost02/SealUtil/blob/master/img/私章4.png")
 
 # 3.使用方法
 ```java
