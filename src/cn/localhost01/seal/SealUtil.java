@@ -5,6 +5,7 @@ import cn.localhost01.seal.configuration.SealConfiguration;
 import cn.localhost01.seal.configuration.SealFont;
 
 import javax.imageio.ImageIO;
+import javax.swing.JLabel;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.AffineTransform;
@@ -546,7 +547,7 @@ public abstract class SealUtil {
             String c = font.getFontText().substring(subIndex, subIndex + 1);
 
             //获取文字高宽
-            FontMetrics fm = sun.font.FontDesignMetrics.getMetrics(f);
+            FontMetrics fm = new JLabel().getFontMetrics(f);
             int w = fm.stringWidth(c), h = fm.getHeight();
 
             if (isTop) {
