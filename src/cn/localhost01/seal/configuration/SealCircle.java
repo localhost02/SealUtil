@@ -7,7 +7,7 @@ package cn.localhost01.seal.configuration;
  */
 public class SealCircle {
 
-    public SealCircle(Integer lineSize, Integer width,Integer height) {
+    public SealCircle(Integer lineSize, Integer width, Integer height) {
         this.lineSize = lineSize;
         this.width = width;
         this.height = height;

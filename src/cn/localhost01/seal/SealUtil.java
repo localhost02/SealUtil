@@ -28,11 +28,10 @@ public abstract class SealUtil {
     /**
      * 生成私人印章图片，并保存到指定路径
      *
-     * @param lineSize 边线宽度
-     * @param font 字体对象
+     * @param lineSize  边线宽度
+     * @param font      字体对象
      * @param addString 追加字符
-     * @param fullPath 保存全路径
-     *
+     * @param fullPath  保存全路径
      * @throws Exception 异常
      */
     public static void buildAndStorePersonSeal(int imageSize, int lineSize, SealFont font, String addString,
@@ -43,9 +42,8 @@ public abstract class SealUtil {
     /**
      * 生成印章图片，并保存到指定路径
      *
-     * @param conf 配置文件F
+     * @param conf     配置文件F
      * @param fullPath 保存全路径
-     *
      * @throws Exception 异常
      */
     public static void buildAndStoreSeal(SealConfiguration conf, String fullPath) throws Exception {
@@ -56,9 +54,7 @@ public abstract class SealUtil {
      * 生成印章图片的byte数组
      *
      * @param image BufferedImage对象
-     *
      * @return byte数组
-     *
      * @throws IOException 异常
      */
     public static byte[] buildBytes(BufferedImage image) throws Exception {
@@ -74,9 +70,7 @@ public abstract class SealUtil {
      * 生成印章图片
      *
      * @param conf 配置文件
-     *
      * @return BufferedImage对象
-     *
      * @throws Exception 异常
      */
     public static BufferedImage buildSeal(SealConfiguration conf) throws Exception {
@@ -88,9 +82,9 @@ public abstract class SealUtil {
         Graphics2D g2d = bi.createGraphics();
 
         //2.1抗锯齿设置
-        //文本不抗锯齿，否则圆中心的文字会被拉长
+        //文本抗锯齿
         RenderingHints hints = new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING,
-                RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
+                RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         //其他图形抗锯齿
         hints.put(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setRenderingHints(hints);
@@ -159,12 +153,10 @@ public abstract class SealUtil {
     /**
      * 生成私人印章图片
      *
-     * @param lineSize 线条粗细
-     * @param font 字体对象
+     * @param lineSize  线条粗细
+     * @param font      字体对象
      * @param addString 是否添加文字，如“印”
-     *
      * @return BufferedImage对象
-     *
      * @throws Exception 异常
      */
     public static BufferedImage buildPersonSeal(int imageSize, int lineSize, SealFont font, String addString)
@@ -240,9 +232,8 @@ public abstract class SealUtil {
     /**
      * 将byte数组保存为本地文件
      *
-     * @param buf byte数组
+     * @param buf      byte数组
      * @param fullPath 文件全路径
-     *
      * @throws IOException 异常
      */
     private static void storeBytes(byte[] buf, String fullPath) throws IOException {
@@ -265,13 +256,13 @@ public abstract class SealUtil {
     /**
      * 画三字
      *
-     * @param bi 图片
-     * @param g2d 原画笔
-     * @param font 字体对象
-     * @param lineSize 线宽
+     * @param bi        图片
+     * @param g2d       原画笔
+     * @param font      字体对象
+     * @param lineSize  线宽
      * @param imageSize 图片尺寸
-     * @param fixH 修复膏
-     * @param fixW 修复宽
+     * @param fixH      修复膏
+     * @param fixW      修复宽
      * @param isWithYin 是否含有“印”
      */
     private static BufferedImage drawThreeFont(BufferedImage bi, Graphics2D g2d, SealFont font, int lineSize,
@@ -328,12 +319,12 @@ public abstract class SealUtil {
     /**
      * 画四字
      *
-     * @param bi 图片
-     * @param font 字体对象
-     * @param lineSize 线宽
+     * @param bi        图片
+     * @param font      字体对象
+     * @param lineSize  线宽
      * @param imageSize 图片尺寸
-     * @param fixH 修复膏
-     * @param fixW 修复宽
+     * @param fixH      修复膏
+     * @param fixW      修复宽
      */
     private static BufferedImage drawFourFont(BufferedImage bi, SealFont font, int lineSize, int imageSize, int fixH,
             int fixW) {
@@ -378,10 +369,10 @@ public abstract class SealUtil {
     /**
      * 绘制圆弧形文字
      *
-     * @param g2d 画笔
+     * @param g2d          画笔
      * @param circleRadius 弧形半径
-     * @param font 字体对象
-     * @param isTop 是否字体在上部，否则在下部
+     * @param font         字体对象
+     * @param isTop        是否字体在上部，否则在下部
      */
     private static void drawArcFont4Circle(Graphics2D g2d, int circleRadius, SealFont font, boolean isTop) {
         if (font == null) {
@@ -472,10 +463,10 @@ public abstract class SealUtil {
     /**
      * 绘制椭圆弧形文字
      *
-     * @param g2d 画笔
+     * @param g2d    画笔
      * @param circle 外围圆
-     * @param font 字体对象
-     * @param isTop 是否字体在上部，否则在下部
+     * @param font   字体对象
+     * @param isTop  是否字体在上部，否则在下部
      */
     private static void drawArcFont4Oval(Graphics2D g2d, SealCircle circle, SealFont font, boolean isTop) {
         if (font == null) {
@@ -556,7 +547,7 @@ public abstract class SealUtil {
                 x += -w / 2f * (float) Math.cos(qxang);
                 y += -w / 2f * (float) Math.sin(qxang);
             } else {
-                x += (h * minRat ) * (float) Math.cos(fxang);
+                x += (h * minRat) * (float) Math.cos(fxang);
                 y += (h * minRat) * (float) Math.sin(fxang);
                 x += w / 2f * (float) Math.cos(qxang);
                 y += w / 2f * (float) Math.sin(qxang);
@@ -565,10 +556,11 @@ public abstract class SealUtil {
             // 旋转
             AffineTransform affineTransform = new AffineTransform();
             affineTransform.scale(0.8, 1);
-            if (isTop)
+            if (isTop) {
                 affineTransform.rotate(Math.toRadians((fxang * 180.0 / Math.PI - 90)), 0, 0);
-            else
+            } else {
                 affineTransform.rotate(Math.toRadians((fxang * 180.0 / Math.PI + 180 - 90)), 0, 0);
+            }
             Font f2 = f.deriveFont(affineTransform);
             g2d.setFont(f2);
             g2d.drawString(c, x.intValue() + INIT_BEGIN, y.intValue() + INIT_BEGIN);
@@ -578,10 +570,10 @@ public abstract class SealUtil {
     /**
      * 画文字
      *
-     * @param g2d 画笔
-     * @param circleWidth 边线圆宽度
+     * @param g2d          画笔
+     * @param circleWidth  边线圆宽度
      * @param circleHeight 边线圆高度
-     * @param font 字体对象
+     * @param font         字体对象
      */
     private static void drawFont(Graphics2D g2d, int circleWidth, int circleHeight, SealFont font) {
         if (font == null) {
@@ -628,7 +620,7 @@ public abstract class SealUtil {
     /**
      * 画圆
      *
-     * @param g2d 画笔
+     * @param g2d    画笔
      * @param circle 圆配置对象
      */
     private static void drawCicle(Graphics2D g2d, SealCircle circle, int x, int y) {
